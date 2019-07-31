@@ -12,6 +12,15 @@ const { SplashScreen, StatusBar } = Plugins;
 export class AppComponent {
   constructor() {
     this.initializeApp();
+      const unsubscribe = firebase.auth().onAuthStateChanged(user => {
+      if (!user) {
+        this.router.navigateByUrl("/loginmodal");
+        unsubscribe();
+      } else {
+        this.router.navigateByUrl("/landing");
+        unsubscribe();
+      }
+    });
   }
 
   initializeApp() {
