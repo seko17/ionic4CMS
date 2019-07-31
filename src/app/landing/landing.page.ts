@@ -38,4 +38,11 @@ HotelName: doc.data().HotelName,
     viewRoom(key){
     this.router.navigate(['/view-room-details',key]);
     }
+     logout(): void {
+
+      this.authService.logoutUser().then(() => {
+        this.router.navigate(['home']);
+       
+      });
+    }
 }
