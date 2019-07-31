@@ -1,0 +1,125 @@
+ion-content {
+    .container {
+       // border: 1px solid red;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.5)),url('../../assets/hotels.webp');
+        background-repeat: no-repeat;
+           background-position: center center;
+           background-size: cover;
+       
+    }
+    .header {
+        width: 100%;
+        height: 10%;
+        //border: 1px solid rgb(0, 17, 255);
+        background: #7c6f52;
+        text-align: right;
+    }
+    .border {
+        border: 1px solid white;
+        width: 90%;
+        height: 80%;
+        position: absolute;
+    top: 10%;
+    left: 5%;
+    }
+.image {
+    
+ 
+   //border: 1px solid red;
+    width: 40%;
+    height: 60%;
+    position: absolute;
+    top:25%;
+    left: 30%;
+    background: linear-gradient(to bottom, #7c6f52b2 100%);
+  // background-image: linear-gradient(45deg, #9aa79d,    #fae9bb);
+}
+.one {
+    width: 96%;
+    height: 96%;
+   background: #f9f9f9;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    background-image: url(../../assets/background.jpg);
+​
+    h1 {
+        text-align: center;
+        font-size: 2vw;
+        letter-spacing: 1px;
+        position: absolute;
+        top: 5%;
+    }
+    p {
+      //  border: 1px solid red;
+        text-align: center;
+        font-size: 70%;
+        letter-spacing: 1px; 
+        position: absolute;
+        top: 40%;
+    }
+}
+.btn {
+    width: 70%;
+    //border: 1px solid red; 
+    position: absolute;
+    top: 75%;
+  left: 15%;
+  
+}
+.lines {
+    display: flex;
+    flex-direction: row;
+   // border: 1px solid red;
+    height: 10%;
+    width: 80%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    justify-content: space-between;
+    .two {
+      //  border-bottom: 2px solid #7c6f52;
+        width: 90%;
+        height: 55%;
+    
+    }
+    .images {
+        text-align: center;
+       // border: 1px solid blue;
+        width: 50%;
+    }
+   
+}
+/* .one {
+     position: absolute;
+    top: 20%;
+    left: 10%;
+    } */
+//before after effects
+/* .surfix {
+    text-align: center;
+    .prefix {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    padding: 0 10px;
+    background:  #7c6f52; //color($colors, light);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:  #7c6f52;
+​
+    &::before {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 60px;
+        background:  #080808;
+        transform: translate(-50%);
+        top: 50%;
+        z-index: -1;
+    }
+}
+} */
+   
+}

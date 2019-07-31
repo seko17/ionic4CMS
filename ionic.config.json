@@ -1,0 +1,7 @@
+{
+  "name": "cmsHotel",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

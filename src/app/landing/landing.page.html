@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>landing</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+    <div class="container">
+      <div class="header">
+  <div class="propic">
+      
+  </div>
+      </div>
+  ​
+      <div class="content">
+   <div class="boxes">
+  ​
+      <ion-card  *ngFor="let hotel of hotelList">
+          <img class="card-image" src ="{{hotel?.image}}" width="100%" height="100%"/>
+          <ion-card-header>
+            <ion-card-subtitle>{{hotel?.HotelName}}</ion-card-subtitle>
+            <ion-card-title>{{hotel?.Description}}</ion-card-title>
+            
+          </ion-card-header>
+          <!-- <ion-button color="primary" style="width: 45%" routerLink="/viewroom" routerDirection="forward">register</ion-button>  -->
+        </ion-card>
+      
+  ​
+      </div>
+      </div>
+  ​
+     
+   
+  ​
+      </div>
+  </ion-content>
+<!-- <ion-content>
+
+  <ion-card *ngFor="let hotel of hotelList">
+    <img  src ="{{hotel?.image}}" />
+    <ion-card-header>
+      <ion-card-subtitle> price</ion-card-subtitle>
+      <ion-card-title>{{hotel?.hotelName}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{hotel?.Description}}
+    </ion-card-content>
+    <p *ngIf="variable">{{hotel?.HotelName}}</p>
+    <ion-button (click)="viewRoom(hotel)" size="small" color="secondary">Secondary</ion-button>
+  </ion-card>
+</ion-content> -->
